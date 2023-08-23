@@ -1,0 +1,133 @@
+/** @format */
+/** @format */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0c81e4;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 70px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  margin: 0;
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.container .by {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 100px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: lighter;
+}
+
+.container h2 span {
+  font-weight: bold;
+}
+
+.hr1 {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.container .year {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 40px;
+  margin-right: 40px;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+}
+
+.hr2 {
+  position: absolute;
+  right: 0;
+  width: 2px; /* Adjust the width of the vertical HR */
+  height: 100px; /* Adjust the height of the vertical HR */
+  margin: 0 auto; /* Center the vertical HR horizontally */
+  margin-right: 60px;
+  border: none;
+  border-left: 2px solid white;
+}
+
+.container .instagram {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  line-height: 10px;
+}
+
+.instagram a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.content {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.twit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  padding-bottom: 50px;
+}
+
+.content h2 {
+  text-align: center;
+  font-weight: 640;
+  margin: 0;
+}
+
+.content h2 svg {
+  fill: #0c81e4;
+}
+
+.content p {
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+footer {
+  background-color: #0c81e4;
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+}
