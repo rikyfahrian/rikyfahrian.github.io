@@ -131,3 +131,40 @@ footer {
 footer p {
   text-align: center;
 }
+
+@media (max-width: 667px) {
+  .hr2 {
+    position: absolute;
+    right: 1000000;
+    width: 2px; /* Adjust the width of the vertical HR */
+    height: 100px; /* Adjust the height of the vertical HR */
+    margin: 0 auto; /* Center the vertical HR horizontally */
+    margin-right: 60px;
+    border: none;
+  }
+
+  .container .by {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: lighter;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .container .instagram {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 120px;
+    margin-bottom: 100px;
+    line-height: 10px;
+  }
+}
