@@ -158,6 +158,9 @@ footer p {
   .twit {
     margin: 5px;
   }
+  .twitter-title {
+    padding: 15px;
+  }
 
   .container h1 {
     font-size: 40px;
