@@ -36,7 +36,7 @@ html {
   position: absolute;
   bottom: 0;
   margin: 0;
-  margin-bottom: 300px;
+  margin-bottom: 280px;
   text-align: center;
   max-width: max-content;
   font-size: 20px;
@@ -157,6 +157,57 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+@media (width: 1024px) {
+  .hr2 {
+    position: absolute;
+    right: 1000000;
+    width: 2px; /* Adjust the width of the vertical HR */
+    height: 100px; /* Adjust the height of the vertical HR */
+    margin: 0 auto; /* Center the vertical HR horizontally */
+    margin-right: 60px;
+    border: none;
+  }
+
+  .container .form {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 500px;
+    text-align: center;
+    max-width: max-content;
+    font-size: 40px;
+  }
+
+  .container .form input[type="text"] {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+@media (width: 1080px) {
+  .hr2 {
+    position: absolute;
+    right: 1000000;
+    width: 2px; /* Adjust the width of the vertical HR */
+    height: 100px; /* Adjust the height of the vertical HR */
+    margin: 0 auto; /* Center the vertical HR horizontally */
+    margin-right: 60px;
+    border: none;
+  }
+
+  .container .form {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 200px;
+    text-align: center;
+    max-width: max-content;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 667px) {
