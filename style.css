@@ -202,3 +202,27 @@ footer p {
     line-height: 10px;
   }
 }
+
+@media (width: 375px) {
+  .container .form {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 190px;
+    text-align: center;
+    max-width: max-content;
+    font-size: 20px;
+  }
+}
+
+@media (width: 390px) {
+  .container .form {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 250px;
+    text-align: center;
+    max-width: max-content;
+    font-size: 20px;
+  }
+}
