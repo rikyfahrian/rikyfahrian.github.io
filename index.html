@@ -12,7 +12,19 @@
   <body>
     <div class="container">
       <hr class="hr1" />
-      <h1 id="port">kamu kena hack, tapi boong</h1>
+      <!-- <h1 id="port">kamu kena hack, tapi boong</h1> -->
+      <!-- <br /> -->
+      <h1 id="h1">cek seberapa cakep lo ?</h1>
+
+      <form id="myform" class="form">
+        <label for="nama">masukan nama : </label>
+        <input type="text" id="nama" name="nama" value="mia" />
+        <br />
+        <button type="submit">cek</button>
+      </form>
+
+      <h3 id="hasil"></h3>
+
       <h2 class="by">by. <span>Riky Fahrian</span></h2>
       <h2 class="year">2023</h2>
 
@@ -65,22 +77,22 @@
     </footer>
 
     <script>
-      const h1 = document.getElementById("port");
+      let form = document.getElementById("myform");
 
-      h1.addEventListener("mouseenter", function () {
-        h1.classList.add("hidden"); // Tambahkan kelas untuk menghilangkan elemen
-        setTimeout(function () {
-          h1.textContent = "Welcome!";
-          h1.classList.remove("hidden"); // Hapus kelas untuk menampilkan kembali elemen
-        }, 300); // Waktu perubahan teks (ms)
-      });
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-      h1.addEventListener("mouseleave", function () {
-        h1.classList.add("hidden");
-        setTimeout(function () {
-          h1.textContent = "kamu kena hack, tapi boong";
-          h1.classList.remove("hidden");
-        }, 300);
+        let nama = document.getElementById("nama").value;
+
+        let randomNumber = Math.floor(Math.random() * (100 - 1) + 1);
+        let hasil = document.getElementById("h1");
+        if (nama == "mia" || nama == "mia sipa" || nama == "mia sipa sopiatur rohmah" || nama == "riky" || nama == "riky fahrian") {
+          hasil.innerText = `${nama} ?? cakep 100% lah gada lawan anjay`;
+        } else if (nama == "monik") {
+          hasil.innerText = `${nama} ?? gada cakepnya`;
+        } else {
+          hasil.innerText = `${nama} ?? cakep ${randomNumber}% lah`;
+        }
       });
     </script>
   </body>
