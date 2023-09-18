@@ -56,6 +56,7 @@ html {
   font-size: 20px;
   font-weight: 509;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
 }
 
 .hidden {
@@ -159,57 +160,6 @@ footer p {
   text-align: center;
 }
 
-@media (width: 1024px) {
-  .hr2 {
-    position: absolute;
-    right: 1000000;
-    width: 2px; /* Adjust the width of the vertical HR */
-    height: 100px; /* Adjust the height of the vertical HR */
-    margin: 0 auto; /* Center the vertical HR horizontally */
-    margin-right: 60px;
-    border: none;
-  }
-
-  .container .form {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    margin-bottom: 500px;
-    text-align: center;
-    max-width: max-content;
-    font-size: 40px;
-  }
-
-  .container .form input[type="text"] {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 20px;
-  }
-}
-/* 
-@media (width: 1080px) {
-  .hr2 {
-    position: absolute;
-    right: 1000000;
-    width: 2px; 
-    height: 100px; 
-    margin: 0 auto; 
-    margin-right: 60px;
-    border: none;
-  }
-
-  .container .form {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    margin-bottom: 200px;
-    text-align: center;
-    max-width: max-content;
-    font-size: 20px;
-  }
-} */
-
 @media (max-width: 667px) {
   .hr2 {
     position: absolute;
@@ -222,15 +172,7 @@ footer p {
   }
 
   .container .by {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    margin-left: 3440px;
-    margin-bottom: 60px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-weight: lighter;
+    z-index: -1;
   }
 
   .twit {
@@ -254,8 +196,6 @@ footer p {
   }
 
   .container .form {
-    position: absolute;
-    bottom: 0;
     margin: 0;
     margin-bottom: 170px;
     text-align: center;
@@ -263,39 +203,3 @@ footer p {
     font-size: 20px;
   }
 }
-
-/* @media (width: 375px) {
-  .container .form {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    margin-bottom: 170px;
-    text-align: center;
-    max-width: max-content;
-    font-size: 20px;
-  }
-
-  .container .by {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-weight: lighter;
-  }
-}
-
-@media (width: 390px) {
-  .container .form {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    margin-bottom: 250px;
-    text-align: center;
-    max-width: max-content;
-    font-size: 20px;
-  }
-} */
